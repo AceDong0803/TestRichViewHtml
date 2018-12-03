@@ -214,7 +214,7 @@
 			
             function clicked_viewMore(){
                 console.log("Casper: " + 11);
-                mraid.extend.viewMore("v.qq.com");
+                mraid.extend.viewMore("http://v.qq.com");
             }
 			
 			function clicked_viewEmpty(){
@@ -381,7 +381,7 @@
    			    mraid.extend.scanQRCode("custom", "scan_qrcode_callback");
 			}
 			function clicked_has_app(){
-   			    mraid.extend.hasApp("com.weibo", "hasAppCallback");
+   			    mraid.extend.hasApp("wb2162695501://", "hasAppCallback");
 			}
 			function hasAppCallback(result){
 				alert(result);
@@ -390,7 +390,7 @@
 				alert(result);
 			}
 			function clicked_open_app(){
-   			    mraid.extend.openApp("com.weibo");
+   			    mraid.extend.openApp("wb2162695501://");
 			}
 		    function clicked_getRichData(){
 			    mraid.extend.getRichdata("getRichDataCallBack");
