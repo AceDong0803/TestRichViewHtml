@@ -371,9 +371,13 @@
 			}
             function clicked_getWebViewName(){
 				console.log("getWebViewName");
-				var webviewName = mraid.extend.getWebViewName();
-				alert(webviewName);
+				mraid.extend.getWebViewName("getWebViewName");
+	
 			}
+
+            function getWebViewName(result){
+                alert(result);
+            }
 
 			function loginCallback(msg){
 			    console.log(msg);
