@@ -53,6 +53,9 @@
 		<button type="button" style="height:60px;width:400px;font-size:40px;" onclick="clicked_getNetworkStatus()">
             getNetworkStatus
         </button>
+        <button type="button" style="height:60px;width:400px;font-size:40px;" onclick="clicked_getWebViewName()">
+            getWebViewName
+        </button>
 		<button type="button" style="height:60px;width:400px;font-size:40px;" onclick="clicked_hide_timer()">
             hideTimer
         </button>
@@ -366,6 +369,12 @@
 				var networkStatus = mraid.extend.getNetworkStatus();
 				alert(networkStatus.status);
 			}
+            function clicked_getWebViewName(){
+				console.log("getWebViewName");
+				var webviewName = mraid.extend.getWebViewName();
+				alert(webviewName);
+			}
+
 			function loginCallback(msg){
 			    console.log(msg);
 			    alert(msg);
