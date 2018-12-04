@@ -113,6 +113,9 @@
 		<button type="button" style="height:60px;width:400px;font-size:40px;" onclick="clicked_viewEmpty()">
             viewMore Empty
         </button>
+        <button type="button" style="height:60px;width:400px;font-size:40px;" onclick="clicked_viewNative()">
+            viewMore Native
+        </button>
 		<button type="button" style="height:60px;width:400px;font-size:40px;" onclick="clicked_getDomain()">
             getDomain
         </button>
@@ -224,6 +227,13 @@
                 console.log("Casper: " + 11);
                 mraid.extend.viewMore();
             }
+
+            function clicked_viewNative(){
+                console.log("Casper: " + 11);
+                mraid.extend.viewMore("tenvideo2://?action=48&starid=2100001609");
+            }
+
+            
             
             function clicked_get_progress(){
                 console.log("Casper: " + 3);
@@ -372,7 +382,6 @@
             function clicked_getWebViewName(){
 				console.log("getWebViewName");
 				mraid.extend.getWebViewName("getWebViewName");
-	
 			}
 
             function getWebViewName(result){
